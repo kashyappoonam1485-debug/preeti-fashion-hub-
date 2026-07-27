@@ -41,9 +41,23 @@ function checkout(){
 
 function placeOrder(){
 
-  orders.push(cart.join(", "));
+let name = document.getElementById("customerName").value;
+let address = document.getElementById("address").value;
+let phone = document.getElementById("phone").value;
 
-  alert("Order placed successfully! 🛍️");
+if(name==="" || address==="" || phone===""){
+alert("Please fill all details");
+return;
+}
+
+orders.push(
+"Name: " + name +
+", Address: " + address +
+", Phone: " + phone +
+", Items: " + cart.join(", ")
+);
+
+alert("Order placed successfully! 🛍️");
 
 }
 
