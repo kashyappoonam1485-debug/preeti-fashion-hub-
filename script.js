@@ -95,4 +95,21 @@ function showOrders(){
 function addWishlist(product){
   wishlist.push(product);
   alert(product + " added to wishlist ❤️");
+}function filterCategory(category){
+
+let products = document.querySelectorAll(".card");
+
+products.forEach(function(product){
+
+let name = product.innerText;
+
+if(name.includes(category)){
+product.style.display = "block";
+}
+else{
+product.style.display = "none";
+}
+
+});
+
 }
