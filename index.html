@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Shopping Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="navbar">
+    <h2><img src="https://via.placeholder.com/50" class="logo"> Preeti Fashion Hub 🛍️</h2>
+    <button onclick="showCart()">Cart 🛒 (<span id="cartCount">0</span>)</button>
+    <button onclick="login()">Login 👤</button>
+    <button onclick="showAllProducts()">Home 🏠</button>
+    <button onclick="showOrders()">My Orders 📦</button>
+</div> 
+
+
+
+<h1>Preeti Fashion Hub 🛍️</h1>
+<p>Shop Fashion, Beauty & Accessories at one place ✨</p>
+<div class="banner">
+  <h2>Big Sale 🎉</h2>
+  <p>Up to 50% OFF on Fashion & Beauty Products ✨</p>
+  <button>Shop Now</button>
+</div>
+<input type="text" id="search" placeholder="Search product..." onkeyup="searchProduct()">
+<div class="categories">
+  <button onclick="filterCategory('Shoes')">Shoes 👟</button>
+  <button onclick="filterCategory('Bag')">Bags 👜</button>
+  <button onclick="filterCategory('Lipstick')">Beauty 💄</button>
+  <button onclick="filterCategory('Watch')">Electronics ⌚</button>
+</div>
+<div class="product">
+
+<div class="card" style="display:block;">
+<img src="https://via.placeholder.com/200" alt="Shoes">
+<h2>Pink Shoes</h2>
+<p>₹999</p>
+<button onclick="addToCart('Pink Shoes',999)">Buy Now</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400" alt="Bag">
+<h2>Hand Bag</h2>
+<p>₹1499</p>
+<button onclick="addToCart('Hand Bag',1499)">Buy Now</button>
+</div>
+<br><br>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Watch">
+<h2>Smart Watch</h2>
+<p>₹2499</p>
+<button onclick="addToCart('Smart Watch',2499)">Buy Now</button>
+</div>
+<br><br>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" alt="Lipstick">
+<h2>Lipstick</h2>
+<p>₹499</p>
+<button onclick="addToCart('Lipstick',499)">Buy Now</button>
+</div>
+</div>
+<div id="cartBox">
+  <h2>Your Cart 🛒</h2>
+  <p id="cartItems">Cart is empty</p>
+  <p id="totalPrice">Total: ₹0</p>
+  <p id="quantity">Quantity: 0</p>
+  <button onclick="checkout()">Checkout</button>
+</div>
+<div class="checkout">
+  <h2>Checkout 🛍️</h2>
+
+  <input type="text" placeholder="Your Name">
+  <br><br>
+
+  <input type="text" placeholder="Address">
+  <br><br>
+  
+<input type="text" placeholder="Phone Number">
+
+  <button onclick="placeOrder()">Place Order</button>
+</div>
+<footer>
+  <h3>Preeti Fashion Hub 🛍️</h3>
+  <p>Fashion • Beauty • Accessories</p>
+  <p>© 2026 Preeti Fashion Hub</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
