@@ -112,4 +112,17 @@ product.style.display = "none";
 
 });
 
+}let cart = [];
+
+function addToCart(name, price){
+
+cart.push({
+name:name,
+price:price
+});
+
+document.getElementById("cartCount").innerHTML = cart.length;
+
+alert(name + " added to cart 🛒");
+
 }
