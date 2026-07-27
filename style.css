@@ -337,4 +337,15 @@ footer p {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
+}.logo{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+}
+
+.navbar{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:10px;
 }
