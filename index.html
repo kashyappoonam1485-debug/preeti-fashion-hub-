@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>My Shopping Store</title>
+<title>Preeti Fashion Hub 🛍️</title>
+
+<link rel="icon" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,6 +42,7 @@
 <span class="sale">SALE 🔥</span>
 <p>₹699</p>
 <p>⭐⭐⭐⭐⭐ (4.8/5)</p>
+<p><b>Customer Review:</b> Amazing quality! ❤️</p>
 <button onclick="addToCart('Pink Shoes',699)">Buy Now</button>
 <button onclick="addWishlist('Pink Shoes')">❤️ Wishlist</button>
 </div>
@@ -49,6 +52,7 @@
 <span class="sale">SALE 🔥</span>
 <p>₹899</p>
 <p>⭐⭐⭐⭐ (4.5/5)</p>
+<p><b>Customer Review:</b> Amazing quality! ❤️</p>
 <button onclick="addToCart('Hand Bag',899)">Buy Now</button>
 <button onclick="addWishlist('Hand Bag')">❤️ Wishlist</button>
 </div>
@@ -59,6 +63,7 @@
 <span class="sale">SALE 🔥</span>
 <p>₹1499</p>
 <p>⭐⭐⭐⭐⭐ (4.7/5)</p>
+<p><b>Customer Review:</b> Amazing quality! ❤️</p> 
 <button onclick="addToCart('Smart Watch',1499)">Buy Now</button>
 <button onclick="addWishlist('Smart Watch')">❤️ Wishlist</button>
 </div>
@@ -68,7 +73,9 @@
 <h2>Lipstick</h2>
 <span class="sale">SALE 🔥</span>
 <p>₹299</p>
+
 <p>⭐⭐⭐⭐ (4.4/5)</p>
+<p><b>Customer Review:</b> Amazing quality! ❤️</p>
 <button onclick="addToCart('Lipstick',299)">Buy Now</button>
 <button onclick="addWishlist('Lipstick')">❤️ Wishlist</button>
 </div>
@@ -79,6 +86,7 @@
 <span class="sale">SALE 🔥</span>
 <p>₹999</p>
 <p>⭐⭐⭐⭐⭐ (4.9/5)</p>
+<p><b>Customer Review:</b> Amazing quality! ❤️</p>
 <button onclick="addToCart('Women Dress',999)">Buy Now</button>
 <button onclick="addWishlist('Women Dress')">❤️ Wishlist</button>
 </div>
@@ -93,13 +101,14 @@
 <div class="checkout">
   <h2>Checkout 🛍️</h2>
 
-  <input type="text" placeholder="Your Name">
+  <input type="text" id="customerName" placeholder="Your Name">
   <br><br>
 
-  <input type="text" placeholder="Address">
+  <input type="text" id="address" placeholder="Address">
   <br><br>
-  
-<input type="text" placeholder="Phone Number">
+
+  <input type="text" id="phone" placeholder="Phone Number">
+  <br><br>
 
   <button onclick="placeOrder()">Place Order</button>
 </div>
@@ -109,6 +118,15 @@
     📱 Order on WhatsApp
   </a>
   </div>
+
+  <div class="about">
+  <h2>About Us ❤️</h2>
+  <p>
+    Welcome to <b>Preeti Fashion Hub</b>! We bring you trendy fashion,
+    beauty products, bags, shoes, watches and accessories at affordable prices.
+    Customer satisfaction is our priority. 🛍️
+  </p>
+</div>
 <div class="contact">
   <h2>Contact Us 📞</h2>
   <p>Email: preetifashionhub@gmail.com</p>
